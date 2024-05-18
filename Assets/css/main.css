@@ -1,0 +1,145 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap"); */
+
+:root {
+  font-size: 16px;
+  font-family: Verdana, Helvetica, sans-serif;
+  box-sizing: border-box;
+  --very-light-neutral: #e7e7e7;
+  --light-neutral: lightgrey;
+  --neutral: grey;
+  --add: #a0e7a0;
+  --warning: #ff964f;
+  --remove: #ff6961;
+  --dark: #232032;
+  --focus: royalblue;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 2rem;
+  margin: 2rem;
+}
+
+.main {
+  grid-column: 2 / 3;
+  padding: 1rem;
+  border: 2px solid lightgray;
+  border-radius: 0.4rem;
+}
+
+.aside {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  align-content: end;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.button-container {
+  margin: 2rem;
+}
+
+.button-container button {
+  margin-right: 0.3rem;
+}
+
+.plant-buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 2rem 1rem;
+  position: relative;
+  width: fit-content;
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+
+#plant-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#counter {
+  font-size: 7rem;
+  margin: 1rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.2rem;
+  background-color: var(--very-light-neutral);
+}
+
+.button {
+  color: black !important;
+  background-color: var(--light-neutral);
+  border: none;
+  padding: 0.2rem;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 0.1rem 0.4rem;
+  margin: 0.4rem 0.2rem 0.2rem 0.2rem;
+  border: 1px solid transparent;
+  font-size: 16px;
+}
+
+.button--not-counted:hover,
+.button--not-counted:focus {
+  background-color: var(--add);
+  border: 1px solid var(--focus);
+}
+
+.button--counted {
+  background-color: var(--add);
+}
+
+.button--counted:hover {
+  background-color: var(--remove);
+  border: 1px solid var(--focus);
+}
+
+.button--control {
+  background-color: #e0d6ff;
+}
+
+#sort-button {
+  width: 8rem;
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+  header {
+    flex-direction: column;
+  }
+  h1 {
+    margin: 0.5rem;
+  }
+  .button {
+    font-size: 1.2rem;
+  }
+  .button--counted:focus {
+    background-color: var(--add);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}

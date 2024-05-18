@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Plant Counter</title>
+    <meta name="description" content="Have you eaten your 30 plants per week? Find out with this simple plant counter." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/reset.css" />
+    <link rel="stylesheet" href="./Assets/css/main.css" />
+    <script src="/Assets/js/plant-counter.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <main class="main">
+      <header class="header">
+        <h1>Plant Counter</h1>
+        <div id="counter">0</div>
+      </header>
+      <div id="plant-buttons-container"></div>
+    </main>
+    <aside class="aside">
+      <h2>How many plants have you eaten this week?</h2>
+      <p>
+        Paragraph explaining how and why. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aliquid, sequi culpa illo, voluptatum, excepturi rem temporibus minus voluptatem expedita similique. Recusandae, quas repellat distinctio
+        perspiciatis sint quos praesentium voluptatum?
+      </p>
+      <div class="button-container sort-button-container">
+        <p>Sort:</p>
+        <br />
+        <button id="sort-button" class="button button--control" type="submit">Alphabetical</button>
+      </div>
+      <!-- <div class="button-container filter-button-container">
+        <p>Filter:</p>
+        <br />
+        <button data-filter-group="fruits">Fruits</button>
+        <button data-filter-group="vegetables">Vegetables</button>
+        <button data-filter-group="alliums">Alliums</button>
+      </div> -->
+    </aside>
+    <!-- 100% privacy-first analytics -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+  </body>
+</html>
