@@ -59,8 +59,8 @@ function updateCounterColour(total) {
   }
 }
 
-const sortButton = document.getElementById("sort-button");
-sortButton.addEventListener("click", toggleSortMethod);
+// const sortButton = document.getElementById("sort-button");
+// sortButton.addEventListener("click", toggleSortMethod);
 
 function toggleSortMethod(event) {
   let buttonText = event.target.innerText;
@@ -100,6 +100,6 @@ const resetButton = document.querySelector("#reset-button");
 
 resetButton.addEventListener("click", function () {
   if (confirm("Are you sure you want to reset?")) {
-    // document.getElementById("yourFormId").reset();
+    //   // document.getElementById("yourFormId").reset();
   }
 });
