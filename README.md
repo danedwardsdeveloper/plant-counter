@@ -19,3 +19,8 @@ Plants that aren't plants
 - Truffles
 - Spirulina (Cyanobacteria)
 - Seaweed (Algae)
+
+## To-Do List
+
+- Style info paragraph, sort button & addPlant button
+- Use local storage

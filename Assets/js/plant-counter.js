@@ -95,3 +95,11 @@ function renderButtonsDefault() {
     renderButton(plant, plant.selected);
   });
 }
+
+const resetButton = document.querySelector("#reset-button");
+
+resetButton.addEventListener("click", function () {
+  if (confirm("Are you sure you want to reset?")) {
+    // document.getElementById("yourFormId").reset();
+  }
+});

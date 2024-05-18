@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Assets/css/reset.css" />
     <link rel="stylesheet" href="./Assets/css/main.css" />
     <script src="/Assets/js/plant-counter.js" type="module" defer></script>
+    <script src="/Assets/js/utilities.js" defer></script>
   </head>
 
   <body>
@@ -15,28 +16,36 @@
       <header class="header">
         <h1>Plant Counter</h1>
         <div id="counter">0</div>
+        <div class="accordion-container">
+          <button class="accordion" role="button" aria-label="Expand Details">
+            <div class="question">
+              <h2>Why count plants?</h2>
+            </div>
+            <div class="toggle-icon-background">
+              <img class="toggle-icon" src="./assets/icons/expand-icon.svg" alt="" />
+            </div>
+          </button>
+          <div class="panel">
+            <p>
+              Aiming for 30 different plants per week might sound daunting, but it's easier than you might think. Ditch the outdated 5-a-Day - it doesn't account for the variety needed for a flourishing gut. By incorporating a colorful mix of fruits,
+              vegetables, whole grains, nuts, and seeds throughout the week, you're well on your way to reaching this beneficial goal. This diversity feeds the beneficial bacteria in your gut, promoting better overall health, a stronger immune
+              system, improved digestion, and even positive effects on mood.
+            </p>
+          </div>
+        </div>
+        <div class="options-container">
+          <div>
+            <button>Sort alphabetically</button>
+            <button id="reset-button">Reset</button>
+          </div>
+          <div>
+            <input type="text" id="add-plant" placeholder="Add plant" />
+            <button type="submit">Add</button>
+          </div>
+        </div>
       </header>
       <div id="plant-buttons-container"></div>
     </main>
-    <aside class="aside">
-      <h2>How many plants have you eaten this week?</h2>
-      <p>
-        Paragraph explaining how and why. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aliquid, sequi culpa illo, voluptatum, excepturi rem temporibus minus voluptatem expedita similique. Recusandae, quas repellat distinctio
-        perspiciatis sint quos praesentium voluptatum?
-      </p>
-      <div class="button-container sort-button-container">
-        <p>Sort:</p>
-        <br />
-        <button id="sort-button" class="button button--control" type="submit">Alphabetical</button>
-      </div>
-      <!-- <div class="button-container filter-button-container">
-        <p>Filter:</p>
-        <br />
-        <button data-filter-group="fruits">Fruits</button>
-        <button data-filter-group="vegetables">Vegetables</button>
-        <button data-filter-group="alliums">Alliums</button>
-      </div> -->
-    </aside>
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
